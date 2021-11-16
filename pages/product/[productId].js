@@ -3,10 +3,10 @@ import { useRouter } from "next/router"
 const ProductItem = () => {
     const { query: {
         productId
-    }} = useRouter()
+    } } = useRouter()
     return (
         <div>
-            Page of the product: {productId}
+            <p>Page of the product: {productId}</p>
         </div>
     )
 }
