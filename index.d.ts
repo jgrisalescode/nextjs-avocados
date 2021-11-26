@@ -1,5 +1,13 @@
 type Url = string
 
+type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | { [property: string]: Json }
+  | Json[]
+
 type TproductId = string
 
 type TProductAttributes = {
@@ -15,5 +23,13 @@ type TProduct = {
     sku: string
     price: number
     image: Url
-    atributes: TProductAttributes
+    attributes: TProductAttributes
+}
+
+type TAPIAVODetailResponse = TProduct
+
+type TAPIAvoResponse = {
+  lenght: number
+  data: TProduct[]
+  error?: string
 }
