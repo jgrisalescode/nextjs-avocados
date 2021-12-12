@@ -4,6 +4,11 @@ import '../global.css'
 
 import CartProvider from '@store/Cart'
 
+export function reportWebVitals(metric) {
+    // analytics - calibre
+    // We can send data to metrics services
+}
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
     // Uses:
     // Context/Providers, Theme, data
