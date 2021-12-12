@@ -4,7 +4,7 @@ import '../global.css'
 
 import CartProvider from '@store/Cart'
 
-export function reportWebVitals(metric) {
+export function reportWebVitals(_metric: any) {
     // analytics - calibre
     // We can send data to metrics services
 }
